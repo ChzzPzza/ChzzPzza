@@ -1,0 +1,99 @@
+/* force scrollbar */
+html {
+overflow-y: scroll;
+}
+
+body{
+font-family: 'Roboto', sans-serif;
+color: hsla(0, 0%, 0%,.54);	
+}
+
+header{
+}
+
+header h1{
+	font-family: 'Roboto', sans-serif;
+	color: hsla(0, 0%, 0%,.86);
+	font-size: 2.5rem;
+	letter-spacing: .05rem;
+
+}
+
+a {
+color: hsla(19, 100%, 50%,1);
+}
+
+	.box{
+	padding: 6rem;
+	}
+
+	/* Medium only */
+	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	.box{ padding: 2.5rem;}
+	}
+
+	/* Small only */
+	@media screen and (max-width: 39.9375em) {
+	.box{ padding: .75rem;}
+	}
+
+figcaption{
+-webkit-animation: random 5s infinite;
+animation: random 5s infinite;
+}
+
+	@keyframes random{
+	50% { background-color: hsla(44, 100%, 59%,1); }  
+	}
+
+	figcaption h4{
+	font-family: "roboto";
+	border-bottom: .2rem solid hsla(0,  0%, 0%, .25);
+	padding-bottom: .25rem;
+	position: absolute;
+	bottom: 1.75rem;
+	}
+
+
+.button{
+background-color: hsla(19, 100%, 50%,1);
+}
+	.button.hollow {
+	border: 2px solid hsla(19, 100%, 50%,1);
+	color: hsla(21, 96%, 45%,1);
+	}
+
+.branding{
+background-image: url("../images/bg-01.png");
+background-size: 25%;
+background-color: hsla(0, 0%, 0%,.04);
+}
+
+.graphicdesign{
+background-color: hsla(0, 0%, 0%,.02);
+}
+
+.webdesign{
+background-image: url("../images/bg-01.png");
+background-size: 25%;	
+background-color: hsla(0, 0%, 0%,.04);
+}
+
+.illustration{
+background-color: hsla(0, 0%, 0%,.02);
+}	
+
+/* Packery Grid */
+.grid-item 			{ 	width: 12.5%; 	float: left;}
+.grid-item--width1	{	width: 12.5%; 	float: left;}
+.grid-item--width2	{ 	width: 25%;		float: left;}
+.grid-item--width3	{ 	width: 50%; 	float: left;}
+.grid-item img {display: block; max-width: 100%;}
+
+	/* Small only */
+	@media screen and (max-width: 39.9375em) {
+	.grid-item { width: 100%; }
+	.grid-item--width1 { width: 100%; }
+	.grid-item--width2 { width: 100%; }
+	.grid-item--width3 { width: 100%; }
+	}
